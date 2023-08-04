@@ -2,6 +2,27 @@
 
 ## Installation
 
+Install JSON Server 
+
+```
+npm install -g json-server
+```
+
+You'll find a `db.json` file in the `src` directory that includes the users you can use.
+
+Start JSON Server
+
+```bash
+json-server --watch db.json
+```
+
+Now if you go to [http://localhost:3000/books/1](http://localhost:3000/books/1), you'll get
+
+```json
+{ "id": 1, "title": "Book 1", "author": 1 }
+```
+
+
 Install the application dependencies by running:
 
 ```sh
@@ -41,7 +62,7 @@ You can sign in to the application with the following usernames and password:
 
 ## Books and Authors List
 
-You'll find a `db.json` file in the `src` directory that includes the users you can use.
+You'll find a `db.json` file in the `src` directory that includes the books and authors you can use.
 
 ## Description
 
